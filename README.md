@@ -21,7 +21,7 @@ The app opens in demo mode and stores changes in the browser until Google Sheets
 5. Open the execution log and copy the generated **BMS private access token**.
 6. Select **Deploy → New deployment → Web app**.
 7. Set **Execute as** to yourself. Deploy the web app.
-8. Copy the deployment URL, open **Settings** in the dashboard, and paste the URL and private token.
+8. Open **Settings** in the dashboard and enter the private token once. The deployed backend URL is already configured in the app.
 
 The dashboard automatically backs up employees, attendance, expenses, and payroll after each change. The circular-arrow button can be used for an immediate manual sync.
 
