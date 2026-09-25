@@ -5,6 +5,7 @@
 @media print{body{background:#fff}.sidebar,header,.no-print,.modal-bg:before{display:none!important}.modal-bg{position:static;background:#fff;padding:0;display:block}.modal.wide{width:100%;max-height:none;padding:0;background:#fff;box-shadow:none}.payslip{box-shadow:none;border:0;padding:15mm;margin:0}.slip-business{print-color-adjust:exact}.slip-table th{print-color-adjust:exact}.slip-net{print-color-adjust:exact}}
 
 .mobile-nav{display:none}
+.brand{padding:2px 7px 29px}.brand-logo{display:block;width:100%;height:auto;object-fit:contain}.slip-brand{display:flex;flex-direction:column;align-items:flex-start;gap:5px}.slip-brand img{display:block;width:245px;max-width:60%;height:auto}.slip-brand>span{font-size:9px;color:#848995;text-transform:uppercase;letter-spacing:1.2px}
 @media(max-width:760px){
  body{padding-bottom:72px}
  .sidebar{width:min(310px,86vw)}
@@ -32,6 +33,7 @@
  .payslip-actions{position:sticky;top:-19px;background:#f3f4f7;z-index:3;padding:2px 0 12px}
  .payslip{padding:18px 15px}
  .slip-brand h2{font-size:17px}
+ .slip-brand img{width:210px;max-width:78%}
  .slip-business{gap:9px;margin:15px 0}
  .slip-title{padding-bottom:10px}
  .slip-employee{grid-template-columns:1fr 1fr}
