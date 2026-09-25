@@ -58,3 +58,42 @@
  .mobile-nav button span{font-size:8px}
  .attendance-list,.expense-list,.mark-list{padding-left:16px;padding-right:16px}
 }
+
+/* Bhansali Medisales brand theme */
+:root{--violet:#00796b;--dark:#17332e;--muted:#6d7f7a;--border:#dfe8e5}
+.sidebar nav button:hover,.settings:hover{background:#edf7f4;color:#00695c}
+.sidebar nav button.active{background:#e3f3ef;color:#00796b}
+.sidebar nav button em{background:#00796b}
+.sync-card{border-color:#cce4de;background:linear-gradient(145deg,#f7fbfa,#e9f5f2)}
+.sync-icon{border-color:#cce4de;color:#00796b}
+.sync-card button,.panel-head>button,.plain{color:#00796b}
+.primary{background:#00796b;box-shadow:0 5px 12px #00796b2e}
+.primary:hover{background:#00675b}
+.hero{background:linear-gradient(105deg,#00695c,#0b8a76);box-shadow:0 12px 28px #00695c30}
+.whitebtn{color:#00695c}
+.stat-icon.violet{background:#e4f4f0;color:#00796b}
+.stat-icon.green{background:#e8f5f1;color:#0a8068}
+.stat-icon.blue{background:#e4f1ef;color:#176f68}
+.stat-icon.orange{background:#edf2ea;color:#627b5a}
+.avatar.violet{background:#e3f3ef;color:#00796b}
+.avatar.blue{background:#e5f1ef;color:#16776c}
+.avatar.amber{background:#eef3e8;color:#637b51}
+.avatar.rose{background:#e9f1ed;color:#476d63}
+.avatar.teal{background:#dcf2ed;color:#087a69}
+.expense-icon.product{background:#e3f3ef;color:#00796b}
+.expense-icon.travel{background:#e4f1ef;color:#176f68}
+.dot-active{background:#e4f4ef;color:#087459}
+.date-control{color:#00796b}
+.expense-summary{background:linear-gradient(105deg,#173d36,#2f5e54)}
+.category.product{background:#e3f3ef;color:#00796b}
+.category.travel{background:#e5f1ef;color:#176f68}
+.net strong{color:#00695c}
+.slipbtn{border-color:#c8e0da;background:#f1f8f6;color:#006f62}
+.modal-icon{background:#e3f3ef;color:#00796b}
+label input:focus,label select:focus,label textarea:focus,.input-icon:focus-within{border-color:#168575;box-shadow:0 0 0 3px #00796b16}
+.slip-business b{color:#00796b}
+.slip-table th{background:#00796b}
+.slip-net{background:#e3f3ef}
+.slip-net strong{color:#00695c}
+.mobile-nav button.active{color:#00796b}
+.mobile-nav button.active svg{filter:drop-shadow(0 3px 5px #00796b44)}
