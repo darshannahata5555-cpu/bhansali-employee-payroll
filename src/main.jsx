@@ -27,6 +27,17 @@ const initials=n=>n.split(' ').map(x=>x[0]).slice(0,2).join('').toUpperCase();
 const colors=['violet','blue','amber','rose','teal'];
 const daysInMonth=m=>{const [y,mo]=m.split('-').map(Number);return new Date(y,mo,0).getDate()};
 
+function consumePrivateSetup(){
+ if(!location.hash.startsWith('#setup='))return;
+ try{
+  const raw=location.hash.slice(7).replace(/-/g,'+').replace(/_/g,'/');
+  const config=JSON.parse(decodeURIComponent(escape(atob(raw))));
+  if(config.url&&config.token){localStorage.setItem('bms-sheet-url',config.url);localStorage.setItem('bms-sheet-token',config.token)}
+ }catch{}
+ history.replaceState(null,'',location.pathname+location.search);
+}
+consumePrivateSetup();
+
 function useStore(){
  const [data,setData]=useState(()=>{const saved=localStorage.getItem('bms-payroll-v2');return saved?JSON.parse(saved):{employees:seedEmployees,attendance:sampleAttendance(),expenses:seedExpenses,payroll:[]}});
  useEffect(()=>localStorage.setItem('bms-payroll-v2',JSON.stringify(data)),[data]);
