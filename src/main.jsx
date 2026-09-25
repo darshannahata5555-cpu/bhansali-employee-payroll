@@ -81,6 +81,7 @@ function App(){
     {page==='Payslips'&&<Payslips employees={active} month={selectedMonth} setMonth={setSelectedMonth} payrollFor={payrollFor} setModal={setModal}/>} 
    </div>
   </main>
+  <nav className="mobile-nav">{nav.map(n=>{const I={Dashboard:LayoutDashboard,Employees:Users,Attendance:CalendarCheck2,Expenses:WalletCards,Payslips:ReceiptText}[n];return <button key={n} className={page===n?'active':''} onClick={()=>{setPage(n);window.scrollTo({top:0,behavior:'smooth'})}}><I/><span>{n}</span></button>})}</nav>
   {modal==='employee'&&<EmployeeModal close={()=>setModal(null)} save={saveEmployee}/>} 
   {modal==='expense'&&<ExpenseModal close={()=>setModal(null)} save={saveExpense} employees={active}/>} 
   {modal==='settings'&&<SettingsModal close={()=>setModal(null)} save={connectSheet} value={sheetUrl} tokenValue={sheetToken}/>} 

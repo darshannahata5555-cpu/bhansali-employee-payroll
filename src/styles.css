@@ -3,3 +3,56 @@
 @media(max-width:1100px){.stats{grid-template-columns:1fr 1fr}.payslip-grid{grid-template-columns:1fr 1fr}.sync{display:none}}
 @media(max-width:760px){.sidebar{transform:translateX(-105%);transition:.25s}.sidebar.open{transform:none;box-shadow:20px 0 50px #0003}.scrim{display:block;position:fixed;inset:0;background:#0005;z-index:19}main{margin:0;width:100%}header{height:78px;padding:0 17px}.menubtn{display:block;margin-right:9px}.header-actions .primary{font-size:0;padding:10px}.header-actions .primary svg{margin:0}.content{padding:18px 15px}.hero{padding:21px;display:block}.hero .whitebtn{margin-top:17px}.stats,.grid-main,.payslip-grid{grid-template-columns:1fr}.attendance-top,.month-bar{align-items:flex-start;gap:16px;flex-direction:column}.attendance-summary{width:100%;justify-content:space-around}.mark-row{align-items:flex-start;flex-wrap:wrap}.mark-actions{width:100%;margin-left:49px}.mark-actions button{flex:1;justify-content:center}.form-grid{grid-template-columns:1fr}.slip-business{grid-template-columns:1fr 1fr}.slip-business>div{border:0}.payslip{padding:22px}.slip-employee{grid-template-columns:1fr}.slip-employee div{border-right:0!important}.panel-head{padding:17px}.toolbar{flex-wrap:wrap}.filter{margin-left:0}}
 @media print{body{background:#fff}.sidebar,header,.no-print,.modal-bg:before{display:none!important}.modal-bg{position:static;background:#fff;padding:0;display:block}.modal.wide{width:100%;max-height:none;padding:0;background:#fff;box-shadow:none}.payslip{box-shadow:none;border:0;padding:15mm;margin:0}.slip-business{print-color-adjust:exact}.slip-table th{print-color-adjust:exact}.slip-net{print-color-adjust:exact}}
+
+.mobile-nav{display:none}
+@media(max-width:760px){
+ body{padding-bottom:72px}
+ .sidebar{width:min(310px,86vw)}
+ header{height:72px;padding:0 14px}
+ header h1{font-size:20px}
+ header p{font-size:11px;white-space:nowrap;max-width:205px;overflow:hidden;text-overflow:ellipsis}
+ .menubtn{padding:6px;margin-right:7px}
+ .header-actions{gap:6px}
+ .header-actions .primary{width:40px;height:40px}
+ .header-actions>.iconbtn{display:none}
+ .content{padding:16px 13px 24px}
+ .hero{padding:20px;border-radius:16px}
+ .hero h2{font-size:19px;line-height:1.35}
+ .hero .whitebtn{width:100%}
+ .stats{gap:11px}
+ .stat{padding:16px}
+ .grid-main{gap:14px}
+ .mark-actions button{min-height:42px}
+ .toolbar{padding:14px}
+ .search{max-width:none;flex-basis:100%}
+ .filter{height:38px}
+ .modal-bg{padding:0;align-items:end}
+ .modal,.modal.wide{width:100%;max-height:94dvh;border-radius:20px 20px 0 0;padding:19px}
+ .modal-head{position:sticky;top:-19px;background:#fff;z-index:2;padding:3px 0 12px}
+ .payslip-actions{position:sticky;top:-19px;background:#f3f4f7;z-index:3;padding:2px 0 12px}
+ .payslip{padding:18px 15px}
+ .slip-brand h2{font-size:17px}
+ .slip-business{gap:9px;margin:15px 0}
+ .slip-title{padding-bottom:10px}
+ .slip-employee{grid-template-columns:1fr 1fr}
+ .slip-table{min-width:0}
+ .slip-table th,.slip-table td{padding:8px 7px;font-size:8px}
+ .slip-net{padding:13px}
+ .slip-net strong{font-size:20px}
+ .payroll-preview .table-wrap{overflow:visible}
+ .payroll-preview table th:nth-child(3),.payroll-preview table td:nth-child(3),.payroll-preview table th:nth-child(4),.payroll-preview table td:nth-child(4),.payroll-preview table th:last-child,.payroll-preview table td:last-child{display:none}
+ .payroll-preview table th,.payroll-preview table td{padding:11px 9px}
+ .payroll-preview .person{min-width:135px}
+ .panel.full>.table-wrap table{min-width:720px}
+ .mobile-nav{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;height:68px;background:#fff;border-top:1px solid #e4e5eb;z-index:18;padding:6px 4px calc(6px + env(safe-area-inset-bottom));box-shadow:0 -5px 22px #20243a12}
+ .mobile-nav button{border:0;background:transparent;color:#9296a3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:9px;font-weight:700;min-width:0}
+ .mobile-nav button svg{width:20px;height:20px}
+ .mobile-nav button.active{color:#6547e8}
+}
+@media(max-width:390px){
+ .slip-business,.slip-employee{grid-template-columns:1fr}
+ .slip-net{align-items:flex-start;gap:8px;flex-direction:column}
+ .slip-net strong{align-self:flex-end}
+ .mobile-nav button span{font-size:8px}
+ .attendance-list,.expense-list,.mark-list{padding-left:16px;padding-right:16px}
+}
