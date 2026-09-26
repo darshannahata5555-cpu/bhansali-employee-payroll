@@ -97,3 +97,36 @@ label input:focus,label select:focus,label textarea:focus,.input-icon:focus-with
 .slip-net strong{color:#00695c}
 .mobile-nav button.active{color:#00796b}
 .mobile-nav button.active svg{filter:drop-shadow(0 3px 5px #00796b44)}
+
+/* Store expense ledgers */
+.store-summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.store-summary{border-radius:16px;padding:22px 24px;color:#fff;display:flex;align-items:center;justify-content:space-between;overflow:hidden;position:relative}
+.store-summary.employee{background:linear-gradient(115deg,#00695c,#0a8b76)}
+.store-summary.owner{background:linear-gradient(115deg,#25463f,#527267)}
+.store-summary span,.store-summary strong,.store-summary small{display:block}
+.store-summary span{font-size:11px;color:#ffffffc2}
+.store-summary strong{font:800 27px Manrope;margin:5px 0}
+.store-summary small{font-size:10px;color:#ffffffa8}
+.store-summary>svg{width:52px;height:52px;color:#ffffff25}
+.store-toolbar{padding:18px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)}
+.store-toolbar .search{margin-left:auto;max-width:300px}
+.store-tabs{display:flex;background:#eef5f3;border-radius:10px;padding:4px}
+.store-tabs button{border:0;background:transparent;color:#6d7f7a;border-radius:8px;padding:8px 12px;font-size:11px;font-weight:700}
+.store-tabs button.active{background:#fff;color:#00796b;box-shadow:0 2px 8px #17332e18}
+.payroll-note{margin:16px 20px 4px;padding:11px 13px;border:1px solid #cfe5df;background:#f1f8f6;color:#426e64;border-radius:10px;display:flex;align-items:center;gap:9px;font-size:11px}
+.payroll-note svg{min-width:17px;color:#00796b}
+.empty-state{text-align:center!important;color:#929b98;padding:48px 20px!important}
+.category.petrol,.category.delivery{background:#e3f3ef;color:#00796b}
+.category.purchase,.category.maintenance{background:#edf2ea;color:#627b5a}
+.category.food{background:#fff0dc;color:#bd6c15}
+
+@media(max-width:760px){
+ .mobile-nav{grid-template-columns:repeat(6,1fr)}
+ .store-summary-grid{grid-template-columns:1fr;gap:12px}
+ .store-toolbar{align-items:stretch;flex-direction:column}
+ .store-toolbar .search{margin:0;max-width:none}
+ .store-tabs button{flex:1}
+ .store-tabs{display:flex}
+ .store-toolbar .primary{width:100%}
+ .payroll-note{margin:14px 14px 4px}
+}

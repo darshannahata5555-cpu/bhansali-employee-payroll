@@ -23,10 +23,12 @@ The app opens in demo mode and stores changes in the browser until Google Sheets
 7. Set **Execute as** to yourself. Deploy the web app.
 8. Open **Settings** in the dashboard and enter the private token once. The deployed backend URL is already configured in the app.
 
-The dashboard automatically backs up employees, attendance, expenses, and payroll after each change. The circular-arrow button can be used for an immediate manual sync.
+The dashboard automatically backs up employees (including email addresses), attendance, salary deductions, employee store expenses, owner store expenses, and payroll after each change. The circular-arrow button can be used for an immediate manual sync.
 
 ## Salary rule
 
 `Daily salary = Monthly salary ÷ Calendar days in the month`
 
 `Net payable = Daily salary × Present days − Employee expenses`
+
+Employee and owner store expenses are business costs only. They are stored in separate Google Sheet tabs and never affect payroll or employee payslips.
