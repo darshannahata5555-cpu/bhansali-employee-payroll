@@ -116,6 +116,8 @@ label input:focus,label select:focus,label textarea:focus,.input-icon:focus-with
 .store-tabs button.active{background:#fff;color:#00796b;box-shadow:0 2px 8px #17332e18}
 .payroll-note{margin:16px 20px 4px;padding:11px 13px;border:1px solid #cfe5df;background:#f1f8f6;color:#426e64;border-radius:10px;display:flex;align-items:center;gap:9px;font-size:11px}
 .payroll-note svg{min-width:17px;color:#00796b}
+.status.half-day{background:#fff5df;color:#b56c0b}
+.mark-actions .half-day.selected{background:#fff4d8;color:#a76108;border-color:#efd291}
 .empty-state{text-align:center!important;color:#929b98;padding:48px 20px!important}
 .category.petrol,.category.delivery{background:#e3f3ef;color:#00796b}
 .category.purchase,.category.maintenance{background:#edf2ea;color:#627b5a}

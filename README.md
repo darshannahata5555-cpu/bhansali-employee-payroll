@@ -29,6 +29,10 @@ The dashboard automatically backs up employees (including email addresses), atte
 
 `Daily salary = Monthly salary ÷ Calendar days in the month`
 
-`Net payable = Daily salary × Present days − Employee expenses`
+`Paid days = Present days + (Half days × 0.5)`
+
+`Net payable = Daily salary × Paid days − Employee expenses`
+
+A **Half Day** attendance entry pays half of that calendar day's salary.
 
 Employee and owner store expenses are business costs only. They are stored in separate Google Sheet tabs and never affect payroll or employee payslips.

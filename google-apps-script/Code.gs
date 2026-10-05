@@ -58,7 +58,7 @@ function writePayroll_(data) {
   const month = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy-MM');
   const days = new Date(Number(month.slice(0,4)), Number(month.slice(5,7)), 0).getDate();
   const rows = (data.employees||[]).filter(e=>e.status==='Active').map(e=>{
-    const worked=(data.attendance||[]).filter(a=>a.employeeId===e.id&&a.date.indexOf(month)===0&&a.status==='Present').length;
+    const worked=(data.attendance||[]).filter(a=>a.employeeId===e.id&&a.date.indexOf(month)===0).reduce((total,a)=>total+(a.status==='Present'?1:a.status==='Half Day'?0.5:0),0);
     const deductions=(data.expenses||[]).filter(x=>x.employeeId===e.id&&x.date.indexOf(month)===0).reduce((s,x)=>s+Number(x.amount),0);
     const daily=Number(e.salary)/days, earned=daily*worked;
     return [month,e.id,days,worked,daily,earned,deductions,Math.max(0,earned-deductions),new Date()];
